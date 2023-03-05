@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="calculator.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple calculator</title>
+	</head>
+	<body>
+		<main>
+			<input type="text" class="display" placeholder="0.00" />
+			<div>
+				<button onclick="reset()" class="keypad">C</button>
+				<button onclick="backSpace()" class="keypad">Del</button>
+				<button onclick="power()" class="keypad">()²</button>
+				<button onclick="addInput('-')" class="keypad">-</button>
+			</div>
+
+			<div>
+				<button onclick="addInput(7)" class="keypad">7</button>
+				<button onclick="addInput(8)" class="keypad">8</button>
+				<button onclick="addInput(9)" class="keypad">9</button>
+				<button onclick="addInput('+')" class="keypad">+</button>
+			</div>
+
+			<div>
+				<button onclick="addInput(4)" class="keypad">4</button>
+				<button onclick="addInput(5)" class="keypad">5</button>
+				<button onclick="addInput(6)" class="keypad">6</button>
+				<button onclick="addInput('*')" class="keypad">x</button>
+			</div>
+
+			<div>
+				<button onclick="addInput(1)" class="keypad">1</button>
+				<button onclick="addInput(2)" class="keypad">2</button>
+				<button onclick="addInput(3)" class="keypad">3</button>
+				<button onclick="addInput('/')" class="keypad">/</button>
+			</div>
+
+			<div>
+				<button onclick="root()" class="keypad">&radic;</button>
+				<button onclick="addInput(0)" class="keypad">0</button>
+				<button onclick="addInput('.')" class="keypad">.</button>
+				<button onclick="result()" class="keypad">=</button>
+			</div>
+		</main>
+		<script src="calculator.js"></script>
+	</body>
+</html>
